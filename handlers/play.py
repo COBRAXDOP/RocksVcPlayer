@@ -100,7 +100,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "❰ǫᴜᴇᴇɴ✘ᴀʟɪsʜᴀ❱ "
+        user.first_name = "❰נαηvι✘мυsιc❱ "
     usar = user
     wew = usar.id
     try:
@@ -118,18 +118,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**❰ǫᴜᴇᴇɴ✘ᴀʟɪsʜᴀ❱  sᴜᴘᴇʀ ғᴀsᴛ\nᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴀssɪsᴛᴀɴᴛ ɴᴏᴡ\nʜᴇʀᴇ ...**")
+                        message.chat.id, "**❰נαηvι✘мυsιc❱  sᴜᴘᴇʀ ғᴀsᴛ\nᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴀssɪsᴛᴀɴᴛ ɴᴏᴡ\nʜᴇʀᴇ ...**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>❰ǫᴜᴇᴇɴ✘ᴀʟɪsʜᴀ❱  » ᴀssɪsᴛᴀɴᴛ\nᴄᴏᴜʟᴅ ɴᴏᴛ ᴊᴏɪɴ ᴛʜɪs ɢʀᴏᴜᴘ ...</b>")
+                        f"<b>❰נαηvι✘мυsιc❱  » ᴀssɪsᴛᴀɴᴛ\nᴄᴏᴜʟᴅ ɴᴏᴛ ᴊᴏɪɴ ᴛʜɪs ɢʀᴏᴜᴘ ...</b>")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<b>❰ǫᴜᴇᴇɴ✘ᴀʟɪsʜᴀ❱  sᴜᴘᴇʀ ғᴀsᴛ\nᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴀssɪsᴛᴀɴᴛ » ɪs\nɴᴏᴛ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ ...</b>")
+            f"<b>❰נαηvι✘мυsιc❱  sᴜᴘᴇʀ ғᴀsᴛ\nᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴀssɪsᴛᴀɴᴛ » ɪs\nɴᴏᴛ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ ...</b>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -143,7 +143,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/5add5d851ca830781d81f.png"
+        thumb_name = "https://telegra.ph/file/1d72dff51e266fb9ed236.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -198,7 +198,7 @@ async def play(_, message: Message):
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/5add5d851ca830781d81f.png"
+            thumb_name = "https://telegra.ph/file/1d72dff51e266fb9ed236.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -206,7 +206,7 @@ async def play(_, message: Message):
                         [
                         InlineKeyboardButton(
                             text="💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞",
-                            url=f"t.me/Shayri_Music_Lovers")
+                            url=f"t.me/L0VEXWORLD")
 
                        ]
                     ]
@@ -256,7 +256,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞",
-                            url=f"t.me/Shayri_Music_Lovers")
+                            url=f"t.me/L0VEXWORLD")
 
                     ]
                 ]
@@ -273,7 +273,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**❰ǫᴜᴇᴇɴ✘ᴀʟɪsʜᴀ❱  ǫᴜᴇᴜᴇᴅ ᴛʜɪs\nsᴏɴɢ ᴀᴛ ᴘᴏsɪᴛɪᴏɴ »** {}".format(position),
+        caption="**❰נαηvι✘мυsιc❱  ǫᴜᴇᴜᴇᴅ ᴛʜɪs\nsᴏɴɢ ᴀᴛ ᴘᴏsɪᴛɪᴏɴ »** {}".format(position),
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
@@ -282,6 +282,6 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**❰ǫᴜᴇᴇɴ✘ᴀʟɪsʜᴀ❱  ɴᴏᴡ ᴘʟᴀʏɪɴɢ\nᴠɪᴀ [ᴀʟɪsʜᴀ  sᴇʀᴠᴇʀ](t.me/ABOUTABHI) ...**".format(), )
+        caption="**❰נαηvι✘мυsιc❱  ɴᴏᴡ ᴘʟᴀʏɪɴɢ\nᴠɪᴀ [cσвяα sεяvεя](t.me/L0VEXWORLD) ...**".format(), )
         os.remove("final.png")
         return await lel.delete()
